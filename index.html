@@ -9,7 +9,13 @@
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
 </head>
-
+<style>
+	/* Estilo para tornar as imagens responsivas em dispositivos móveis */
+	.carousel .reel article img {
+	  max-width: 100%;
+	  height: auto;
+	}
+</style>
 <body class="homepage is-preload">
 	<div id="page-wrapper">
 
@@ -54,14 +60,13 @@
 		<!-- Carousel -->
 		<section class="carousel">
 			<div class="reel">
-
-				<article>
-					<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-					<header>
-						<h3><a href="#">Quarto Completo em Branco</a></h3>
-					</header>
-					<p>Quarto espaçoso e arejado, móveis brancos que refletem a luz suavemente.</p>
-				</article>
+			  <article>
+				<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+				<header>
+				  <h3><a href="#">Quarto Completo em Branco</a></h3>
+				</header>
+				<p>Quarto espaçoso e arejado, móveis brancos que refletem a luz suavemente.</p>
+			  </article>
 
 				<article>
 					<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
@@ -218,15 +223,19 @@
                     <label for="e-mail" class="form_label">Email</label>
                     <input type="email" name="email" class="form_input" id="email" placeholder="seuemail@email.com" required>
                 </div>
+
+				<div class="form_grupo">
+                    <label for="password" class="form_label">Senha</label>
+                    <input type="password" name="password" class="form_input" id="password" cols="30" rows="3" placeholder="*********" required>
+                </div>
+
+				<div class="form_grupo">
+                    <label for="password" class="form_label">Confirmar Senha</label>
+                    <input type="password" name="confirm-password" class="form_input" id="password" cols="30" rows="3" placeholder="*********" required>
+                </div>
                 
               
                     
-                    
-                    <div class="form_message">
-                        
-                        <label for="message" class="form_message_label"> Digite aqui sua sua mensagem:</label>
-                        <textarea name="mensagem" id="message" cols="30" rows="3" class="form_input message_input" required></textarea>
-                    </div>
                     <div class="submit">
                       <input type="hidden" name="acao" value="enviar">
                       <button type="submit" name="Submit" class="submit_btn" >Cadastrar</button>
@@ -239,10 +248,10 @@
 						<li>Design: Cadore & Kohanoski</a></li>
 					</ul>
 				</div>
-    		</div><!--container_form-->
+    		</div>
 		
 
-						<!-- Copyright -->
+						
 
 					</div>
 
