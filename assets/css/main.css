@@ -3482,3 +3482,24 @@ body.homepage.is-preload #header:after {
 	margin-top: 15px;
 	margin-bottom: 15px;
 }
+
+.icon-container{
+	position: absolute;
+	left: 16px;
+	text-decoration: none;
+}
+
+.icon-cont{
+	position: absolute;
+	right: 16px;
+	text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+
+	.logo{
+		width: 300px;
+        height: 160px;
+	}
+
+}
