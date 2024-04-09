@@ -135,7 +135,7 @@
 			.css('-ms-overflow-style', '-ms-autohiding-scrollbar')
 			.css('-webkit-overflow-scrolling', 'touch');
 
-		
+
 		if (config.hideOnClick) {
 
 			$this.find('a')
@@ -155,10 +155,10 @@
 					event.preventDefault();
 					event.stopPropagation();
 
-					
+
 					$this._hide();
 
-					
+
 					window.setTimeout(function () {
 
 						if (target == '_blank')

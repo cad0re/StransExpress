@@ -211,3 +211,25 @@
 		});
 
 })(jQuery);
+
+	
+
+  function checkScreenWidth() {
+        var screenWidth = window.innerWidth;
+        var mobileWidth = 768; 
+
+        if (screenWidth < mobileWidth) {
+            document.getElementById("instagramIcon").src = "images/insta-pronto.png";
+            document.getElementById("githubIcon").src = "images/gith-pronto.png";
+            document.getElementById("linkedinIcon").src = "images/linkedin-pronto.png";
+            document.getElementById("facebookIcon").src = "images/face-pronto.png";
+        } else {
+            document.getElementById("instagramIcon").src = "images/instagram.png";
+            document.getElementById("githubIcon").src = "images/github.png";
+            document.getElementById("linkedinIcon").src = "images/linkedin.png";
+            document.getElementById("facebookIcon").src = "images/facebook.png";
+        }
+    }
+
+    window.onload = checkScreenWidth;
+    window.onresize = checkScreenWidth;
